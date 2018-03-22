@@ -2,6 +2,7 @@
 
 var urlRegex = /^https?:\/\/(?:[^./?#]+\.)?www.chris\.org/;
 var lineRegex = /^\d\d... \d\d:\d.*/;
+var gridRegex = /.*([A-R][A-R]\d\d)[a-x][a-x].*/;
 
 // A function to use as callback
 function doStuffWithDom(domContent) {
@@ -11,7 +12,8 @@ function doStuffWithDom(domContent) {
 	for (i = 0; i < numLines; i++) {
 		var line = lines[i];
 		if (lineRegex.test(line)) {
-			console.log('xxx: ' + line);
+			var array = gridRegex.exec(line);
+			console.log(array[1]);
 		}
 	}
 }
