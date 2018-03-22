@@ -1,10 +1,19 @@
 // Regex-pattern to check URLs against. 
-// It matches URLs like: http[s]://[...]stackoverflow.com[...]
+
 var urlRegex = /^https?:\/\/(?:[^./?#]+\.)?www.chris\.org/;
+var lineRegex = /^\d\d... \d\d:\d.*/;
 
 // A function to use as callback
 function doStuffWithDom(domContent) {
-    console.log('I received the following DOM content:\n' + domContent);
+	var lines = domContent.split("\n");
+	var numLines = lines.length;
+	
+	for (i = 0; i < numLines; i++) {
+		var line = lines[i];
+		if (lineRegex.test(line)) {
+			console.log('xxx: ' + line);
+		}
+	}
 }
 
 // When the browser-action button is clicked...
