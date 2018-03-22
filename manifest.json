@@ -8,7 +8,7 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["*://*.stackoverflow.com/*"],
+    "matches": ["*://*.www.chris.org/*"],
     "js": ["content.js"]
   }],
   "browser_action": {
