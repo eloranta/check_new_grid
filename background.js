@@ -52,6 +52,7 @@ var grids = [
 "EL17",
 "EL29",
 "EL67",
+"EL87",
 "EL95",
 "EL96",
 "EL99",
@@ -219,6 +220,8 @@ var grids = [
 "JN47",
 "JN48",
 "JN49",
+"JN52",
+"JN53",
 "JN54",
 "JN55",
 "JN56",
@@ -321,6 +324,7 @@ var grids = [
 "KG50",
 "KG53",
 "KG58",
+"KG64",
 "KH77",
 "KI58",
 "KI79",
@@ -334,6 +338,7 @@ var grids = [
 "KM69",
 "KM71",
 "KM72",
+"KN02",
 "KN03",
 "KN05",
 "KN06",
@@ -341,6 +346,7 @@ var grids = [
 "KN08",
 "KN11",
 "KN13",
+"KN17",
 "KN18",
 "KN22",
 "KN26",
@@ -353,7 +359,6 @@ var grids = [
 "KN37",
 "KN45",
 "KN48",
-"KN53",
 "KN57",
 "KN66",
 "KN67",
@@ -376,6 +381,7 @@ var grids = [
 "KO24",
 "KO25",
 "KO26",
+"KO28",
 "KO29",
 "KO31",
 "KO37",
@@ -389,6 +395,7 @@ var grids = [
 "KO54",
 "KO56",
 "KO59",
+"KO60",
 "KO63",
 "KO64",
 "KO67",
@@ -440,10 +447,12 @@ var grids = [
 "LG89",
 "LH27",
 "LH42",
+"LH80",
 "LI75",
 "LL48",
 "LL75",
 "LL93",
+"LN02",
 "LN04",
 "LN05",
 "LN06",
@@ -482,6 +491,7 @@ var grids = [
 "NO34",
 "NO52",
 "NO66",
+"NO76",
 "OI53",
 "OJ39",
 "OK03",
@@ -507,6 +517,7 @@ var grids = [
 "QM05",
 "QM06",
 "QM07",
+"QN12",
 "QN16",
 "RE54",
 "RE57",
@@ -516,6 +527,7 @@ var grids = [
 "RF80",
 "RF81",
 "RG30",
+"RG37",
 "RH39",
 "RH92",
 "RI00"
@@ -523,6 +535,8 @@ var grids = [
 
 // A function to use as callback
 function doStuffWithDom(domContent) {
+	console.clear();
+	
 	var lines = domContent.split("\n");
 	var numLines = lines.length;
 	
